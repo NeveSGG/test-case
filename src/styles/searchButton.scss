@@ -1,0 +1,25 @@
+.SearchButton {
+    cursor: pointer;
+    width: 164px;
+    height: 48px;
+    button {
+        cursor: pointer;
+        font-family: Gordita, 'Segoe UI', sans-serif;
+        width: 164px;
+        height: 48px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        font-feature-settings: 'ss01' on;
+        color: #fff;
+        border-radius: 2px;
+        border: 2px solid #6935FD;
+        background-color: #6935FD;
+        transition: all .25s ease-out;
+
+        &:hover {
+            color: #6935FD;
+            background-color: #fff;
+        }
+    }
+}

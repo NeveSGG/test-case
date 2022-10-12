@@ -1,0 +1,42 @@
+.card {
+    margin-top: 16px;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    max-width: 750px;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px 0 32px;
+    border-radius: 4px;
+    border: 1px solid #f3f3f3;
+    background-color: white;
+
+    .location {
+        font-family: 'Gordita Medium', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        font-feature-settings: 'ss01' on;
+        color: #272727;
+    }
+
+    .description {
+        display: flex;
+        gap: 5px;
+
+        p {
+            font-family: Gordita;
+            font-weight: 400;
+            font-size: 16px;
+            letter-spacing: -0.02em;
+            font-feature-settings: 'ss01' on;
+            color: #616161;
+        }
+
+        img {
+            margin-left: 15px;
+            margin-top: 4px;
+        }
+    }
+}
