@@ -1,0 +1,40 @@
+.footer {
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer-credentials {
+        padding-left: 111px;
+        
+        p {
+            font-family: Gordita;
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: -0.02em;
+            font-feature-settings: 'ss01' on;
+            color: #A8A8A8;
+        }
+    }
+
+    .footer-links {
+        padding-right: 150px;
+        display: flex;
+        gap: 20px;
+
+        a{
+            p {
+                font-family: Gordita;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                text-align: right;
+                letter-spacing: -0.02em;
+                font-feature-settings: 'ss01' on;
+                color: #A8A8A8;
+
+            }
+        }
+    }
+}

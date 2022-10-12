@@ -1,0 +1,113 @@
+@font-face {
+  font-family: Gordita;
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gordita Regular'), url('/assets/fonts/gordita-regular/Gordita\ Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gordita Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gordita Thin'), url('/assets/fonts/gordita-regular/Gordita\ Thin.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gordita Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gordita Light'), url('/assets/fonts/gordita-regular/Gordita\ Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gordita Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gordita Medium'), url('/assets/fonts/gordita-regular/Gordita\ Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gordita Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gordita Bold'), url('/assets/fonts/gordita-regular/Gordita\ Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gordita Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gordita Black'), url('/assets/fonts/gordita-regular/Gordita\ Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gordita Ultra';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gordita Ultra'), url('/assets/fonts/gordita-regular/Gordita\ Ultra.woff') format('woff');
+}
+  
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    font-family: Gordita, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      z-index: -1;
+      background: url(/assets/img/gradients.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  body::-webkit-scrollbar{
+      width: 11px;               /* width of the entire scrollbar */
+      height: 11px;
+    }
+    
+  body::-webkit-scrollbar-track {
+      background: #fff;        /* color of the tracking area */
+    }
+    
+  body::-webkit-scrollbar-thumb {
+      background-color: #6935FD;    /* color of the scroll thumb */
+      border-radius: 20px;       /* roundness of the scroll thumb */
+      border: 3px solid #fff;  /* creates padding around scroll thumb */
+    }
+  
+  .customLink {
+    cursor: pointer;
+    color: #272727;
+    text-decoration: none;
+    background: no-repeat 0 100%;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 2px;
+    transition: all .3s ease;
+
+  }
+  
+  .customLink:hover, .customLink:focus {
+    background-size: 100% 2px;
+  }
